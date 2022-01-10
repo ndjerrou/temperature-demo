@@ -31,6 +31,6 @@ app.get("/temperature/:city", (req, res) => {
   res.send("ok");
 });
 
-const port = 3000;
+const port = process.env.PORT || 3000;
 
 app.listen(port, () => console.log(`Listenning on port ${port}...`));
